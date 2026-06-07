@@ -1,0 +1,52 @@
+{
+  "object_id": "bottle",
+  "display_name": "Plastic Water Bottle",
+  "description": "A portable container for liquids, typically made from polyethylene terephthalate (PET) plastic. Water bottles are manufactured through blow-molding processes and are designed to be lightweight, transparent, and chemically inert for safe beverage storage.",
+  "functionality": "Stores and dispenses liquids safely. The PET polymer structure provides chemical resistance and transparency. The cap creates an airtight seal. The structural ribs provide strength while minimizing material usage. The base design provides stability.",
+  "applications": [
+    "Beverage Storage",
+    "Hydration on the Go",
+    "Sports and Fitness",
+    "Emergency Water Storage",
+    "Chemical Storage (Industrial)"
+  ],
+  "interesting_facts": [
+    "PET plastic bottles can be recycled into polyester fiber for clothing and carpets.",
+    "A single PET bottle takes approximately 450 years to decompose in a landfill.",
+    "The blow-molding process heats a PET preform to 100°C then inflates it into a mold.",
+    "Reusable stainless steel or glass bottles have 30x lower lifetime carbon footprint than single-use plastic."
+  ],
+  "model_prefab": "BottleXRay",
+  "sustainability_rating": 3,
+  "recyclability": "High if recycled - PET (Type 1 plastic) is widely accepted. However, global recycling rates remain below 30%.",
+  "co2_footprint_kg": 0.08,
+  "components": [
+    {
+      "component_id": "body",
+      "display_name": "PET Body",
+      "short_description": "Transparent polyethylene terephthalate (PET) container formed by stretch blow-molding.",
+      "color_hex": "#3498DB",
+      "model_prefab": "BottleBody",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Polyethylene_terephthalate"
+    },
+    {
+      "component_id": "cap",
+      "display_name": "Polypropylene Cap",
+      "short_description": "Threaded polypropylene cap providing an airtight and leak-proof seal for the bottle opening.",
+      "color_hex": "#E74C3C",
+      "model_prefab": "BottleCap",
+      "position_offset": { "x": 0.0, "y": 0.12, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Polypropylene"
+    },
+    {
+      "component_id": "label",
+      "display_name": "Label",
+      "short_description": "BOPP (biaxially-oriented polypropylene) shrink or wrap-around label with product branding and nutritional information.",
+      "color_hex": "#F39C12",
+      "model_prefab": "BottleLabel",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.035 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Label"
+    }
+  ]
+}

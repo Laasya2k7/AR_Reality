@@ -1,0 +1,71 @@
+{
+  "object_id": "phone",
+  "display_name": "Smartphone",
+  "description": "A smartphone is a handheld computer with mobile telephony capabilities. It integrates powerful processors, sensors, cameras, and wireless radios into a compact device powered by a rechargeable battery and controlled through a touchscreen interface.",
+  "functionality": "The SoC (System on Chip) processes all computation. The battery stores electrical energy. The camera module captures images and video using image sensors. The display assembly renders visuals and captures touch input. Wireless radios enable connectivity via cellular, Wi-Fi, and Bluetooth.",
+  "applications": [
+    "Communication",
+    "Photography",
+    "Navigation",
+    "Mobile Gaming",
+    "Mobile Banking",
+    "Health Monitoring"
+  ],
+  "interesting_facts": [
+    "Modern smartphone SoCs contain over 10 billion transistors on a chip smaller than a fingernail.",
+    "The camera module in flagship phones uses computational photography algorithms to rival DSLR cameras.",
+    "Smartphone batteries use lithium-ion chemistry and degrade by roughly 20% after 500 charge cycles.",
+    "5G mmWave frequencies can deliver theoretical speeds exceeding 10 Gbps."
+  ],
+  "model_prefab": "PhoneXRay",
+  "sustainability_rating": 5,
+  "recyclability": "Low-Moderate - contains rare earth metals and complex multi-layer PCBs that are difficult to separate.",
+  "co2_footprint_kg": 70,
+  "components": [
+    {
+      "component_id": "processor",
+      "display_name": "SoC Processor",
+      "short_description": "System on Chip integrating CPU, GPU, NPU, and modem into a single die for maximum efficiency.",
+      "color_hex": "#E74C3C",
+      "model_prefab": "PhoneProcessor",
+      "position_offset": { "x": 0.0, "y": 0.01, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/System_on_a_chip"
+    },
+    {
+      "component_id": "battery",
+      "display_name": "Lithium-Ion Battery",
+      "short_description": "High-density lithium-ion battery cell providing power with fast-charging and wireless charging support.",
+      "color_hex": "#F39C12",
+      "model_prefab": "PhoneBattery",
+      "position_offset": { "x": 0.0, "y": -0.02, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery"
+    },
+    {
+      "component_id": "camera",
+      "display_name": "Camera Module",
+      "short_description": "Multi-lens optical assembly with image sensor, ISP, and OIS for professional-grade photography.",
+      "color_hex": "#9B59B6",
+      "model_prefab": "PhoneCamera",
+      "position_offset": { "x": -0.02, "y": 0.03, "z": 0.01 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Camera_module"
+    },
+    {
+      "component_id": "display",
+      "display_name": "Display Assembly",
+      "short_description": "OLED or AMOLED display panel with touch digitizer, offering high refresh rates and HDR capability.",
+      "color_hex": "#3498DB",
+      "model_prefab": "PhoneDisplay",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.005 },
+      "wiki_url": "https://en.wikipedia.org/wiki/OLED"
+    },
+    {
+      "component_id": "5g_modem",
+      "display_name": "5G Modem",
+      "short_description": "Integrated or discrete modem supporting 5G NR, 4G LTE, Wi-Fi 6E, and Bluetooth 5.3 connectivity.",
+      "color_hex": "#1ABC9C",
+      "model_prefab": "PhoneModem",
+      "position_offset": { "x": 0.02, "y": 0.01, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/5G_NR"
+    }
+  ]
+}

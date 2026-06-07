@@ -1,0 +1,80 @@
+{
+  "object_id": "laptop",
+  "display_name": "Laptop",
+  "description": "A portable personal computer that integrates a display, keyboard, and trackpad in a compact form factor. Laptops are powered by rechargeable batteries and contain numerous sophisticated components working in concert to deliver computing power in a mobile package.",
+  "functionality": "Processes data, runs software applications, enables communication, and stores information. The CPU executes instructions, RAM provides working memory, storage retains data persistently, and the GPU renders visuals.",
+  "applications": [
+    "Software Development",
+    "Content Creation",
+    "Business Productivity",
+    "Gaming",
+    "Education",
+    "Data Analysis"
+  ],
+  "interesting_facts": [
+    "A modern laptop CPU contains billions of transistors etched at nanometer scale.",
+    "Laptops dissipate heat through copper heat pipes connected to small fans.",
+    "The first commercially available laptop was the Osborne 1, released in 1981.",
+    "Modern SSDs can read data at speeds exceeding 7,000 MB/s using NVMe protocol."
+  ],
+  "model_prefab": "LaptopXRay",
+  "sustainability_rating": 6,
+  "recyclability": "Moderate - contains recoverable metals (gold, copper, aluminum) and hazardous materials requiring special handling.",
+  "co2_footprint_kg": 320,
+  "components": [
+    {
+      "component_id": "cpu",
+      "display_name": "CPU (Processor)",
+      "short_description": "The central processing unit that executes all program instructions.",
+      "color_hex": "#E74C3C",
+      "model_prefab": "LaptopCPU",
+      "position_offset": { "x": 0.0, "y": 0.05, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Central_processing_unit"
+    },
+    {
+      "component_id": "ram",
+      "display_name": "RAM (Memory)",
+      "short_description": "Volatile memory that temporarily stores data actively used by the operating system and applications.",
+      "color_hex": "#3498DB",
+      "model_prefab": "LaptopRAM",
+      "position_offset": { "x": 0.06, "y": 0.04, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Random-access_memory"
+    },
+    {
+      "component_id": "ssd",
+      "display_name": "SSD (Storage)",
+      "short_description": "Solid-state drive that persistently stores the operating system, applications, and user data.",
+      "color_hex": "#2ECC71",
+      "model_prefab": "LaptopSSD",
+      "position_offset": { "x": -0.06, "y": 0.04, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Solid-state_drive"
+    },
+    {
+      "component_id": "battery",
+      "display_name": "Battery",
+      "short_description": "Rechargeable lithium-polymer or lithium-ion battery pack providing portable power.",
+      "color_hex": "#F39C12",
+      "model_prefab": "LaptopBattery",
+      "position_offset": { "x": 0.0, "y": -0.04, "z": 0.06 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Laptop_battery"
+    },
+    {
+      "component_id": "gpu",
+      "display_name": "GPU (Graphics Card)",
+      "short_description": "Dedicated or integrated graphics processor responsible for rendering images and video.",
+      "color_hex": "#9B59B6",
+      "model_prefab": "LaptopGPU",
+      "position_offset": { "x": 0.0, "y": 0.05, "z": -0.04 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+    },
+    {
+      "component_id": "motherboard",
+      "display_name": "Motherboard",
+      "short_description": "The main circuit board connecting all components via buses, slots, and connectors.",
+      "color_hex": "#1ABC9C",
+      "model_prefab": "LaptopMotherboard",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Motherboard"
+    }
+  ]
+}

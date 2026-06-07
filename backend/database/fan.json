@@ -1,0 +1,70 @@
+{
+  "object_id": "fan",
+  "display_name": "Electric Fan",
+  "description": "An electric fan converts electrical energy into mechanical energy to create airflow. It uses an electric motor to spin blades, which push air through the room to create a cooling effect through convection and evaporation.",
+  "functionality": "The motor converts electrical power into rotational motion. The capacitor helps the motor start and maintain efficient operation. The rotating blades create air pressure differences that move air. The shaft transfers rotational energy from motor to blades.",
+  "applications": [
+    "Home Cooling",
+    "Industrial Ventilation",
+    "Electronics Cooling",
+    "Air Circulation",
+    "Exhaust Systems"
+  ],
+  "interesting_facts": [
+    "Modern BLDC (Brushless DC) fans consume up to 70% less energy than traditional AC fans.",
+    "The angle of fan blades (pitch angle) determines the airflow volume and direction.",
+    "The first electric fan was invented by Schuyler Skaats Wheeler in 1882.",
+    "Tower fans use cylindrical impellers and redirect airflow 90 degrees using aerodynamics."
+  ],
+  "model_prefab": "FanXRay",
+  "sustainability_rating": 8,
+  "recyclability": "High - mostly aluminum, steel, and copper which are highly recyclable.",
+  "co2_footprint_kg": 15,
+  "components": [
+    {
+      "component_id": "motor",
+      "display_name": "Electric Motor",
+      "short_description": "Converts electrical energy into rotational mechanical energy using electromagnetic induction.",
+      "color_hex": "#E74C3C",
+      "model_prefab": "FanMotor",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Electric_motor"
+    },
+    {
+      "component_id": "capacitor",
+      "display_name": "Capacitor",
+      "short_description": "Provides the phase shift needed to start the single-phase induction motor and improves power factor.",
+      "color_hex": "#3498DB",
+      "model_prefab": "FanCapacitor",
+      "position_offset": { "x": 0.05, "y": 0.0, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Capacitor"
+    },
+    {
+      "component_id": "shaft",
+      "display_name": "Rotating Shaft",
+      "short_description": "Steel shaft that transmits torque from the motor rotor to the fan blades.",
+      "color_hex": "#95A5A6",
+      "model_prefab": "FanShaft",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.03 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Drive_shaft"
+    },
+    {
+      "component_id": "bearings",
+      "display_name": "Ball Bearings",
+      "short_description": "Precision rolling-element bearings that support the shaft and reduce friction during high-speed rotation.",
+      "color_hex": "#F39C12",
+      "model_prefab": "FanBearings",
+      "position_offset": { "x": -0.02, "y": 0.02, "z": 0.0 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Ball_bearing"
+    },
+    {
+      "component_id": "blades",
+      "display_name": "Fan Blades",
+      "short_description": "Aerodynamically shaped blades that create airflow through pressure differential when rotated.",
+      "color_hex": "#2ECC71",
+      "model_prefab": "FanBlades",
+      "position_offset": { "x": 0.0, "y": 0.0, "z": 0.08 },
+      "wiki_url": "https://en.wikipedia.org/wiki/Fan_blade"
+    }
+  ]
+}
